@@ -1,12 +1,12 @@
 import java.util.Random;
 
 /**
- * Practice03Test
- * A class which manages various searching and sorting algorithms and reports the timing of them.
- * This main class contains some basic code to get started.
- * @author dgbrizan
- *
- */
+* Practice03Test
+* A class which manages various searching and sorting algorithms and reports the timing of them.
+* This main class contains some basic code to get started.
+* @author dgbrizan
+*
+*/
 public class Practice03Test {
 	
 	protected final int [] ARRAY_SIZES = {50000, 100000, 150000, 200000, 250000, 300000, 350000, 400000, 450000, 500000};
@@ -20,16 +20,16 @@ public class Practice03Test {
 
 	
 	/**
-	 * Default (and only) constructor. Just creates the factory.
-	 */
+	* Default (and only) constructor. Just creates the factory.
+	*/
 	public Practice03Test() {
 		factory = new Practice03Factory();
 	}
 	
 	
 	/**
-	 * Populates the array with non-decreasing random values.
-	 */
+	* Populates the array with non-decreasing random values.
+	*/
 	private boolean fillSearchArray () {
 		Random rand = new Random();
 		int stepSize = Integer.MAX_VALUE / (arr.length * 2);
@@ -49,9 +49,9 @@ public class Practice03Test {
 
 
 	/**
-	 * Executes multiple searches for values in the arr of int[]. Reports total search time
-	 * and average time (i.e. approximate time for one search).
-	 */
+	* Executes multiple searches for values in the arr of int[]. Reports total search time
+	* and average time (i.e. approximate time for one search).
+	*/
 	public void timeSearches() {
 		Random rand = new Random();
 
@@ -75,8 +75,8 @@ public class Practice03Test {
 	
 	
 	/**
-	 * Populates the array with random values.
-	 */
+	* Populates the array with random values.
+	*/
 	private void fillSortArray () {
 		Random r = new Random();
 		for (int i = 0; i < arr.length; i++) {
@@ -86,8 +86,8 @@ public class Practice03Test {
 	
 	
 	/**
-	 * Executes multiple sorts on arr of int[]. Reports total time to sort the values.
-	 */
+	* Executes multiple sorts on arr of int[]. Reports total time to sort the values.
+	*/
 	public void timeSorts() {
 		for (String sortAlgo : SORT_TYPE) {
 			Practice03Sort sort = factory.getSortingAlgorithm(sortAlgo);

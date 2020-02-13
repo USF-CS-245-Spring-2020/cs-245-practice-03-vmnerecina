@@ -1,13 +1,11 @@
 /**
- * Practice03Factory: A factory for building instances of classes which can search 
- * (i.e. linear search, binary search) and implementations of some basic sorting
- * algorithms (selection sort, bubble sort, insertion sort).
- * @author dbrizan
- *
- */
+* Practice03Factory: A factory for building instances of classes which can search 
+* (i.e. linear search, binary search) and implementations of some basic sorting
+* algorithms (selection sort, bubble sort, insertion sort).
+* @author dbrizan
+*
+*/
 public class Practice03Factory {
-	
-	
 	/**
 	 * Gets a Practice03Search instance according to the parameter.
 	 * @param algoName Sorting algorithm name; must contain one of: linear, binary*{recursive|iterative}.
